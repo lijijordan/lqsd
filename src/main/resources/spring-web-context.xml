@@ -38,13 +38,16 @@
 	<!-- 启动对@Aspectj的支持 -->
 	<aop:aspectj-autoproxy proxy-target-class="true" />
 
-	<context:component-scan base-package="com.lqsd.web" />
+	<context:component-scan base-package="com.lqsd.controller" />
 
 	<mvc:annotation-driven />
 
 	<!-- 静态资源的访问 -->
 	<mvc:annotation-driven />
 	<mvc:resources mapping="/resources/**" location="/resources/" />
+	<mvc:resources mapping="/css/**" location="/css/" />
+	<mvc:resources mapping="/js/**" location="/js/" />
+	<mvc:resources mapping="/images/**" location="/images/" />
 
 	<!--配置视图解析器 -->
 	<bean
